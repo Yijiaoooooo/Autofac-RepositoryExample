@@ -1,0 +1,18 @@
+﻿
+@model RepositoryExample.Models.Grade
+@{
+   
+}
+
+
+
+@using (Html.BeginForm())
+{
+    
+    @Html.HiddenFor(model=>model.Id)
+    @Html.EditorFor(model=>model.Name)
+
+    <input type="submit"  value="提交"/>
+}
+
+@Html.ActionLink("删除","Delete",new{Id=Model.Id})

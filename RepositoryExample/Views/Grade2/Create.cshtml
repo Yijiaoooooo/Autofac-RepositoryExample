@@ -1,0 +1,13 @@
+﻿@model RepositoryExample.Models.Grade
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(model=>model.Name)
+
+    <input type="submit"  value="提交"/>
+}

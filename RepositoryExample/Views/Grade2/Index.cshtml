@@ -1,0 +1,17 @@
+﻿@model IQueryable<RepositoryExample.Models.Grade>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.ActionLink("新建","create")
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+        </tr>
+    }
+</table>
